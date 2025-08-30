@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import logo from "@/assets/logo.png";
 const Footer = () => {
   const footerSections = [{
     title: "Learn",
@@ -21,7 +22,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <img src="/lovable-uploads/064b9c49-50f9-4d2d-a9d9-392b6322542e.png" alt="ASI Gyan Logo" className="h-10 w-auto" />
+              <img src={logo} alt="ASI Gyan Logo" className="h-10 w-auto" />
               
             </div>
             <p className="text-muted-foreground mb-6 max-w-md leading-relaxed">

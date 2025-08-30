@@ -37,6 +37,45 @@ const Courses = () => {
           </p>
         </div>
 
+        {/* Courses Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {courses.map((course, idx) => (
+            <Card key={idx} className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow-green h-full flex flex-col">
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <CardTitle className="text-xl font-bold">{course.title}</CardTitle>
+                  <Badge variant="outline" className="border-secondary text-secondary bg-secondary/10">
+                    {course.level}
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4 flex-1">
+                <p className="text-muted-foreground leading-relaxed">{course.description}</p>
+
+                <div className="flex flex-wrap gap-2 text-sm">
+                  <Badge variant="outline" className="border-border">⏱ {course.duration}</Badge>
+                  <Badge variant="outline" className="border-border">🎯 {course.mode}</Badge>
+                </div>
+
+                <div>
+                  <div className="text-sm font-medium mb-2 text-foreground">Highlights</div>
+                  <div className="flex flex-wrap gap-2">
+                    {course.highlights.map((h) => (
+                      <Badge key={h} variant="outline" className="border-muted text-muted-foreground">
+                        {h}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="pt-2">
+                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">Enroll Now</Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
 
         {/* CTA Section */}
         <div className="grid md:grid-cols-2 gap-6 mb-12">

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   return <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -6,7 +7,7 @@ const Header = () => {
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-4">
-            <img src="/src/assets/logo.png" alt="ASI Gyan Logo" className="h-16 w-auto animate-logo-float animate-logo-glow transition-all duration-300 hover:scale-110" />
+            <img src={logo} alt="ASI Gyan Logo" className="h-16 w-auto animate-logo-float animate-logo-glow transition-all duration-300 hover:scale-110" />
             
           </div>
 
@@ -30,8 +31,8 @@ const Header = () => {
           </div>
 
           {/* CTA Button */}
-          <Button variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow-green animate-glow-pulse">
-            Explore Courses
+          <Button asChild variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow-green animate-glow-pulse">
+            <a href="#courses">Explore Courses</a>
           </Button>
         </nav>
       </div>
