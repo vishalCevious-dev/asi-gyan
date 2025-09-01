@@ -119,7 +119,7 @@ const Blog = () => {
                       <span>•</span>
                       <span>{blogPosts[0].date}</span>
                       <span>•</span>
-                      <span>{blogPosts[0].readTime}</span>
+                      {/* <span>{blogPosts[0].readTime}</span> */}
                     </div>
                     <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
                       Read Full Article
@@ -190,7 +190,7 @@ const Blog = () => {
           <Button 
             variant="outline"
             size="lg"
-            className="border-secondary text-secondary hover:bg-secondary/10"
+            className="border-secondary text-secondary hover:bg-secondary/10 mt-4"
           >
             View All Articles
           </Button>

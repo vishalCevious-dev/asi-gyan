@@ -2,28 +2,28 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 const Courses = () => {
-  const courses = [{
-    title: "AI Fundamentals Program",
-    description: "Master the core concepts of Artificial Intelligence through hands-on projects and real-world applications.",
-    duration: "8 Weeks",
-    mode: "Online",
-    level: "Beginner",
-    highlights: ["Machine Learning Basics", "Neural Networks", "Python for AI", "Project Portfolio"]
-  }, {
-    title: "Advanced AI Specialization",
-    description: "Deep dive into advanced AI topics including deep learning, computer vision, and natural language processing.",
-    duration: "12 Weeks",
-    mode: "Hybrid",
-    level: "Advanced",
-    highlights: ["Deep Learning", "Computer Vision", "NLP", "AI Ethics"]
-  }, {
-    title: "AI Leadership Track",
-    description: "Strategic AI implementation for executives and team leaders driving organizational transformation.",
-    duration: "6 Weeks",
-    mode: "Executive",
-    level: "Leadership",
-    highlights: ["AI Strategy", "Team Management", "ROI Analysis", "Implementation"]
-  }];
+  // const courses = [{
+  //   title: "AI Fundamentals Program",
+  //   description: "Master the core concepts of Artificial Intelligence through hands-on projects and real-world applications.",
+  //   duration: "8 Weeks",
+  //   mode: "Online",
+  //   level: "Beginner",
+  //   highlights: ["Machine Learning Basics", "Neural Networks", "Python for AI", "Project Portfolio"]
+  // }, {
+  //   title: "Advanced AI Specialization",
+  //   description: "Deep dive into advanced AI topics including deep learning, computer vision, and natural language processing.",
+  //   duration: "12 Weeks",
+  //   mode: "Hybrid",
+  //   level: "Advanced",
+  //   highlights: ["Deep Learning", "Computer Vision", "NLP", "AI Ethics"]
+  // }, {
+  //   title: "AI Leadership Track",
+  //   description: "Strategic AI implementation for executives and team leaders driving organizational transformation.",
+  //   duration: "6 Weeks",
+  //   mode: "Executive",
+  //   level: "Leadership",
+  //   highlights: ["AI Strategy", "Team Management", "ROI Analysis", "Implementation"]
+  // }];
   return <section id="courses" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         {/* Section Header */}
@@ -38,7 +38,7 @@ const Courses = () => {
         </div>
 
         {/* Courses Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {courses.map((course, idx) => (
             <Card key={idx} className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow-green h-full flex flex-col">
               <CardHeader>
@@ -74,7 +74,7 @@ const Courses = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
+        </div> */}
 
 
         {/* CTA Section */}
