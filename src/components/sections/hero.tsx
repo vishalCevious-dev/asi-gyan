@@ -115,7 +115,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 2.2 }}
           >
-            {"Made in Bharat, Scaling to the World 🌍".split("").map((char, index) => (
+            {"Made in Bharat, Scaling to the World".split("").map((char, index) => (
               <motion.span
                 key={index}
                 initial={{ opacity: 0, y: 10 }}
